@@ -55,7 +55,6 @@ $sent = mail(
 	$body,
 	implode("\r\n", $headers)
 );
-$sent = true;
 
 if (!$sent) {
 	$respond(500, [
