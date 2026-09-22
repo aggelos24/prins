@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="el">
+	<head>
+		<title>PR Insurance</title>
+		<meta name="description" content="Το επίσημο site του ασφαλιστικού πρακτορείου PR Insurance.">
+		<meta name="keywords" content="Ασφάλειες, Ασφαλιστικό πρακτορείο, Αστική Ευθύνη, Ασφαλιστήριο, Συμβόλαιο Πυρός, Ασφάλεια Ζωής, Αποταμίευση, Επένδυση, Σύνταξη, Συνταξιοδοτικό Πρόγραμμα, Ασφάλεια για Airbnb, Ασφάλεια Φορτηγών, Ασφάλεια Σκαφών, Ασφάλεια Αυτοκινήτων, Ταξιδιωτική Ασφάλεια, Ασφάλεια για φοιτητές Erasmus, Ασφάλεια Κτιρίου, Ασφάλεια Πιστώσεων">
+		<meta name="author" content="Angelos Arnaoutis">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/photos/logo.png">
+		<link href="assets/css/styles.css" rel="stylesheet">
+		<link href="assets/fa/css/fontawesome.min.css" rel="stylesheet">
+		<link href="assets/fa/css/solid.min.css" rel="stylesheet">
+		<link href="assets/fa/css/regular.min.css" rel="stylesheet">
+		<link href="assets/fa/css/brands.min.css" rel="stylesheet">
+		<script src="js/index.js" defer></script>
+	</head>
+	<body>
+		<div id="topbar" class="sticky">
+			<div class="d-flex flex-space-between bg-white py-5px topbar-row d-up-to-lg-none">
+				<a class="cursor-pointer" href="/"><img class="w-300px" src="assets/photos/topbar_logo.jpg" /></a>
+
+				<div class="d-flex gap-column-10px gap-row-0 gap-column-10px gap-row-0 topbar-nav">
+					<div class="py-8px cursor-pointer"><a href="/#health" class="text-dark-blue fs-18px font-weight-bold text-underline_hover">Υγεία</a></div>
+					<div class="py-8px cursor-pointer"><a href="/#vehicle" class="text-dark-blue fs-18px font-weight-bold text-underline_hover">Όχημα</a></div>
+					<div class="py-8px cursor-pointer"><a href="/#savings" class="text-dark-blue fs-18px font-weight-bold text-underline_hover">Αποταμίευση</a></div>
+					<div class="py-8px cursor-pointer"><a href="/#house" class="text-dark-blue fs-18px font-weight-bold text-underline_hover">Κατοικία</a></div>
+					<div class="py-8px cursor-pointer"><a href="/#business" class="text-dark-blue fs-18px font-weight-bold text-underline_hover">Επιχειρήσεις</a></div>
+				</div>
+			</div>
+	
+			<div class="bg-white d-from-lg-none">
+				<a class="cursor-pointer" href="/"><img class="w-adjustable d-block mx-auto" src="assets/photos/topbar2.jpg" /></a>
+
+				<div class="w-adjustable d-flex flex-wrap gap-column-50px gap-row-0 mx-auto px-10px">
+					<div class="py-8px cursor-pointer"><a href="/#health" class="text-dark-blue fs-18px font-weight-bold text-underline_hover">Υγεία</a></div>
+					<div class="py-8px cursor-pointer"><a href="/#vehicle" class="text-dark-blue fs-18px font-weight-bold text-underline_hover">Όχημα</a></div>
+					<div class="py-8px cursor-pointer"><a href="/#savings" class="text-dark-blue fs-18px font-weight-bold text-underline_hover">Αποταμίευση</a></div>
+					<div class="py-8px cursor-pointer"><a href="/#house" class="text-dark-blue fs-18px font-weight-bold text-underline_hover">Κατοικία</a></div>
+					<div class="py-8px cursor-pointer"><a href="/#business" class="text-dark-blue fs-18px font-weight-bold text-underline_hover">Επιχειρήσεις</a></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="b-image pt-100px">
+			<div class="w-500px mx-auto p-15px bg-white border-dark-blue br-10px">
+				<div class="text-dark-blue font-weight-bold fs-25px">Φόρμα Επικοινωνίας</div>
+				<div class="mt-20px d-flex flex-column">
+					<form id="contact-form" action="/send-contact.php" method="post">
+						<input id="contact-email" type="email" name="email" placeholder="Email" required class="w-100pc py-10px px-10px br-2px border-dark-blue" />
+						<input id="contact-mobile" type="tel" name="mobile" placeholder="Τηλέφωνο" required class="w-100pc py-10px px-10px br-2px border-dark-blue mt-10px" />
+						<textarea id="contact-message" name="message" placeholder="Μήνυμα" required class="w-100pc py-10px px-10px br-2px border-dark-blue mt-10px" rows="5"></textarea>
+						<div id="contact-form-status" class="mt-10px text-dark-blue fs-15px" aria-live="polite"></div>
+						<div class="d-flex mt-10px">
+							<button id="contact-submit" type="submit" class="bg-dark-blue text-white border-dark-blue fs-15px br-10px w-100pc py-5px cursor-pointer">Αποστολή <i class="fas fa-paper-plane"></i></button>
+							<button type="button" onclick="window.location.href='/';" class="bg-red text-white border-red fs-15px br-10px ml-5px w-100pc py-5px cursor-pointer">Επιστροφή <i class="fas fa-undo"></i></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
