@@ -146,16 +146,16 @@ a {
 	margin-left: 10px;
 }
 
-.w-500px {
-	width: 500px;
-}
-
 .w-300px {
 	width: 300px;
 }
 
 .w-100pc {
 	width: 100%;
+}
+
+.max-w-500px {
+	max-width: 500px;
 }
 
 .cursor-pointer {
